@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* Existing styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    color: #003366; /* Deep blue */
+}
+
+header p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h2 {
+    font-size: 1.6em;
+    margin: 0;
+    color: #003366; /* Deep blue */
+}
+
+.book-card p {
+    color: #777;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.book-card .price {
+    margin-top: 15px;
+    font-size: 1.4em;
+    color: #e94e77; /* Coral */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #003366; /* Deep blue */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* New styles */
+
+/* Add/Edit Book Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+form button {
+    background-color: #003366; /* Deep blue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e94e77; /* Coral */
+}
+
+/* Edit/Delete Button Styles */
+.book-card button {
+    background-color: #003366; /* Deep blue */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+    background-color: #e94e77; /* Coral */
+}

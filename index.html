@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookDash - Top 20 Books</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Top 20 Books</h1>
+        <p>Discover the best books available right now</p>
+      </header>
+      <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title" required />
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <input type="text" id="price" placeholder="Price" required />
+        <button type="submit">Add Book</button>
+      </form>
+
+      <form id="edit-book-form" style="display: none">
+        <input type="hidden" id="edit-id" />
+        <input type="text" id="edit-title" placeholder="Title" required />
+        <input
+          type="text"
+          id="edit-description"
+          placeholder="Description"
+          required
+        />
+        <input type="text" id="edit-price" placeholder="Price" required />
+        <button type="submit">Update Book</button>
+      </form>
+      <main id="book-list">
+        <!-- Books will be inserted here by JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 BookDash</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
